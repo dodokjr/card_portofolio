@@ -67,6 +67,10 @@
     background-color: #1DB954;
 }
 
+.b-sportify{
+    color: #1DB954;
+}
+
 .bg-sportify:hover{
     background-color: #147d38;
 }
@@ -74,6 +78,10 @@
 .bg-discord{
     color: #ffffff;
     background-color: #7289da;
+}
+
+.b-discord{
+    color: #7289da;
 }
 
 .bg-discord:hover{
