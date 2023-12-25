@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bg-green{
+    color: #ffffff;
+    background-color: rgba(56, 48, 163, 0.681);
+    transition: transform 5.1s all;
+    -webkit-transition: transform 5.1s all;
+    -moz-transition: transform 5.1s all;
+    -ms-transition: transform 5.1s all;
+    -o-transition: transform 5.1s all;
+}
+
+.bg-green:hover{
+    background-color: rgba(43, 40, 115, 0.681);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.zoom{
+    transition: transfrom 2.1 all;
+    -webkit-transition: transfrom 2.1 all;
+    -moz-transition: transfrom 2.1 all;
+    -ms-transition: transfrom 2.1 all;
+    -o-transition: transfrom 2.1 all;
+}
+
+.zoom:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.zoom-1{
+    transition: transfrom 2.1ms all;
+    -webkit-transition: transfrom 2.1ms all;
+    -moz-transition: transfrom 2.1ms all;
+    -ms-transition: transfrom 2.1ms all;
+    -o-transition: transfrom 2.1ms all;
+}
+
+.zoom-1:hover{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}
+
+.bg-imges{
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    background-image: url('https://img.freepik.com/free-photo/leaf-nature-backgrounds-pattern-illustration-plant-backdrop-design-abstract-vibrant-green-nature-wallpaper-illustration-generative-ai_188544-12680.jpg?w=1380&t=st=1703487830~exp=1703488430~hmac=3b4e5be33e20116091f5da5e450858ac8eca9ecc968144354574ccfa5f7d12d1');
+}
+
+.bg-sportify{
+    color: #ffffff;
+    background-color: #1DB954;
+}
+
+.bg-sportify:hover{
+    background-color: #147d38;
+}
+
+.bg-discord{
+    color: #ffffff;
+    background-color: #7289da;
+}
+
+.bg-discord:hover{
+    background-color: #4c5c97;
+}
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      };
+    </script>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif" class="dark:bg-slate-900 bg-white bg-imges">
+    <div class="p-4 m-4">
+      <div class="flex items-center justify-center">
+        <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <span class="mr-5 flex dark:hidden">
+            <span onclick="darkmode()">
+              <svg height="24" width="24" stroke="currentColor" fill="none" stroke-width="2" viewBox="-5.28 -5.28 34.56 34.56" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-5.28" y="-5.28" width="34.56" height="34.56" rx="15.897600000000002" fill="#ffffff" strokewidth="0"></rect></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+                    stroke="#000000"
+                    stroke-width="2.4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+          </span>
+          <span class="mr-5 hidden dark:flex">
+            <span onclick="lightmode()">
+              <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </span>
+          </span>
+          <div class="flex flex-col space-y-4 items-center justify-center">
+            <img src="pp.jpg" class="rounded-full" width="110" height="105" />
+            <a class="flex dark:text-white" href="/index.html">Muhammad Fikri Ardiyansah</a>
+          </div>
+          <hr class="w-48 h-1 bg-lime-950 border-0 rounded md:my-10 dark:bg-lime-500" />
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">My Card</h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kalo kamu merasa capek maka tidur lah di kasur bukan di pundak orang</p>
+          <div class="flex items-center justify-center">
+            <div class="mx-6 flex-row dark:text-white">
+              <div class="grid grid-cols-4 gap-4">
+                <a class="font-bold py-2 px-4 rounded-full text-2xl bg-sportify" href="#" title="Github">
+                  <i class="bx bxl-spotify"></i>
+                </a>
+                <a class="font-bold py-2 px-4 rounded-full text-2xl bg-discord" href="#">
+                  <i class="bx bxl-discord-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr class="w-48 h-1 mx-auto my-4 bg-lime-950 border-0 rounded md:my-10 dark:bg-lime-500" />
+          <div class="flex flex-col space-y-4 dark:text-white">
+            <p class="text-center">Media Sosial</p>
+            <a href="https://github.com/dodokjr" class="inline-flex items-center px-3 py-2 font-medium text-white bg-sky-600 hover:bg-sky-700 rounded-full zoom-1">
+              Github.
+              <span class="text-2xl ms-1"><i class="bx bxl-github"></i></span>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-fikri-ardiyansah/" class="inline-flex items-center px-3 py-2 font-medium text-white bg-sky-600 hover:bg-sky-700 zoom-1 rounded-full">
+              Linkedin
+              <span class="text-2xl ms-1">
+                <i class="bx bxl-linkedin"></i>
+              </span>
+            </a>
+            <a href="https://instagram.com/fkri__17" class="inline-flex items-center px-3 py-2 font-medium text-white bg-sky-600 hover:bg-sky-700 zoom-1 rounded-full">
+              Instagram
+              <span class="text-2xl ms-1">
+                <i class="bx bxl-instagram"></i>
+              </span>
+            </a>
+            <a href="https://sociabuzz.com/muhammadfikriardiyansah" class="inline-flex items-center px-3 py-2 font-medium text-white bg-sky-600 hover:bg-sky-700 zoom-1 rounded-full">
+              SocialBuzz
+              <span class="text-2xl ms-1">
+                <i class="bx bx-wallet-alt"></i>
+              </span>
+            </a>
+            <a href="https://api-mfikria.vercel.app/website" class="inline-flex items-center px-3 py-2 font-medium text-white bg-sky-600 hover:bg-sky-700 zoom-1 rounded-full">
+              SocialBuzz
+              <span class="text-2xl ms-1">
+                <i class="bx bx-world"></i>
+              </span>
+            </a>
+          </div>
+          <hr class="w-48 h-1 mx-auto my-4 bg-lime-950 border-0 rounded md:my-10 dark:bg-lime-500" />
+          <div class="flex flex-col space-y-4 dark:text-white">
+            <p class="text-center">Jadwal 2</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 font-medium text-white bg-green rounded-full">
+              Lorem ipsum dolor sit amet.
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
+            <a href="#" class="inline-flex items-center px-3 py-2 font-medium text-white bg-green rounded-full">
+              Lorem ipsum dolor sit amet.
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
+            <a href="#" class="inline-flex items-center px-3 py-2 font-medium text-white bg-green rounded-full">
+              Lorem ipsum dolor sit amet.
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

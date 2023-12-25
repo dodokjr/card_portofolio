@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      };
+    </script>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif" class="dark:bg-slate-900 bg-white">
+    <header class="w-full p-3 border-b dark:border-b flex backdrop-blur-lg">
+      <nav class="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:item-center md:item-center sm:item-center lg:justify-between md:justify-between sm:justify-between justify-start dark:text-white">
+        <ul>
+          <li class="font-mono text-xl">Mfikria</li>
+        </ul>
+        <ul id="header-nav" class="mr-6 sm:flex md:flex lg:flex hidden">
+          <li class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0">
+            <a href="./card.html">Card Project</a>
+          </li>
+          <li class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0">
+            <a href="#gallery">gallery</a>
+          </li>
+          <div>
+            <ul class="flex">
+              <li class="mr-5 flex dark:hidden">
+                <p onclick="darkmode()">
+                  <svg height="24" width="24" stroke="currentColor" fill="none" stroke-width="2" viewBox="-5.28 -5.28 34.56 34.56" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-5.28" y="-5.28" width="34.56" height="34.56" rx="15.897600000000002" fill="#ffffff" strokewidth="0"></rect></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+                        stroke="#000000"
+                        stroke-width="2.4"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                </p>
+              </li>
+              <li class="mr-5 hidden dark:flex">
+                <p onclick="lightmode()">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                </p>
+              </li>
+              <li class="mr-5 flex dark:hidden">
+                <a href="/github">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="mr-5 hidden dark:flex">
+                <a href="/github">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </nav>
+
+      <div class="sm:hidden flex" onclick="OnclickOpenMenu()" id="open-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="hidden" onclick="OnclickCloseMenu()" id="close-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+    </header>
+
+    <div
+      class="bg-cover bg-center bg-[url('https://img.freepik.com/free-photo/yasaka-pagoda-sannen-zaka-street-kyoto-japan_335224-10.jpg?w=1380&t=st=1703486153~exp=1703486753~hmac=3be331e15f810b74c3bbf9f78bce47c2ca19b13f698da5451fb498c837484795')]"
+    >
+      <div id="card" class="p-4 m-4">
+        <div class="max-w-sm w-full lg:max-w-full lg:flex justify-center md:max-w-full md:flex justify-center">
+          <div
+            class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+            style="
+              background-image: url('https://img.freepik.com/free-photo/vertical-shot-grey-cat-with-blue-eyes-dark_181624-34787.jpg?w=740&t=st=1703485935~exp=1703486535~hmac=9df80f246ccbd0cbc3f0a1017c63756e891069bcb45ff80beff469a488ff9362');
+            "
+            title="Woman holding a mug"
+          ></div>
+          <div
+            class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal dark:bg-slate-900 bg-white dark:text-white"
+          >
+            <div class="mb-8">
+              <p>My Portofolio</p>
+              <div class="font-bold text-xl mb-2 dark:text-white" data-aos="fade-up">Muhammad Fikri Ardiyansah</div>
+              <p class="text-gray-700 text-base dark:text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta, porro delectus nulla dolor recusandae enim quisquam quas. Ad quaerat dolorem dolores numquam, a corrupti sapiente quas vel hic expedita dignissimos
+                natus debitis ipsum impedit laborum quibusdam, perspiciatis architecto odio! Ipsa, explicabo. Similique quia consequatur vero autem eum in incidunt quo! Voluptas magni delectus accusamus tenetur facere quae ullam rerum qui
+                unde ipsa dolore aliquam repudiandae, quos asperiores quaerat hic suscipit soluta. Nostrum labore explicabo optio illum dolor at hic, eveniet pariatur unde odit, similique dignissimos sunt amet! Nulla atque numquam
+                asperiores, et dolores libero vitae voluptatibus, dolorum illo nisi deleniti cumque, fugit sint distinctio sunt quibusdam! Blanditiis at expedita non quo quod suscipit omnis quasi repudiandae fugit iste dolor, tenetur
+                doloremque, id asperiores sint vero illum corrupti dicta accusantium sit eum praesentium unde aliquam dolorum! Assumenda tempora illo illum alias nemo accusamus nulla provident cum? Atque sequi ullam officiis possimus
+                provident modi, similique ab voluptatem libero ipsa doloremque excepturi. Deleniti at maiores dolorum perspiciatis ut modi natus eum debitis! Amet, id voluptas. Nam architecto neque accusamus illum quisquam mollitia enim
+                reprehenderit, minima itaque obcaecati, minus maxime saepe a repellendus. Voluptates, exercitationem temporibus quas voluptate facere ullam accusamus eos quia!
+              </p>
+            </div>
+            <div class="flex flex-col space-y-4 dark:text-white">
+              <p>gfkhasgf</p>
+              <p>fijusaofhj</p>
+              <p>fijusaofhj</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="media-social" class="p-4 m-4">
+        <div class="flex items-center justify-center">
+          <div class="rounded mx-6 flex-row dark:text-slate-900 text-white">
+            <div class="grid grid-cols-4 gap-4">
+              <a class="font-bold py-2 px-4 rounded-full" href="https://github.com/dodokjr" title="Github">
+                <p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </p>
+              </a>
+              <a class="font-bold py-2 px-4 rounded-full" href="https://instagram.com/fkri__17">
+                <p>
+                  <svg width="29" height="29" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                      <rect x="15.5" y="9" width="2" height="2" rx="1" transform="rotate(-90 15.5 9)" fill="#000000"></rect>
+                      <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)" stroke="#000000" stroke-linecap="round"></rect>
+                    </g>
+                  </svg>
+                </p>
+              </a>
+              <a class="font-bold py-2 px-4 rounded-full" href="https://www.linkedin.com/in/muhammad-fikri-ardiyansah/">
+                <p>
+                  <svg width="29" height="29" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <rect width="132" height="132" x="30" y="30" stroke="currentColor" stroke-width="12" rx="16"></rect>
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="M66 86v44"></path>
+                      <circle cx="66" cy="64" r="8" fill="#000000"></circle>
+                      <path stroke="currentColor" stroke-linecap="round" stroke-width="12" d="M126 130v-26c0-9.941-8.059-18-18-18v0c-9.941 0-18 8.059-18 18v26"></path>
+                    </g>
+                  </svg>
+                </p>
+              </a>
+              <a class="font-bold py-2 px-4 rounded-full" href="mailto:ffikri604@gmail.com">
+                <p>
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="feather feather-github">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z"
+                        fill="#000000"
+                      ></path>
+                    </g>
+                  </svg>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gallery" class="p-4 m-4">
+      <div class="bg-white dark:bg-slate-900">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+            >©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            <a href="https://mfikria.vercel.app/" target="_blank" class="hover:underline">mfikria</a>. All Rights Reserved.
+          </span>
+          <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+              <a href="/card.html" class="hover:underline me-4 md:me-6">Card</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
