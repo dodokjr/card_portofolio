@@ -59,7 +59,7 @@
     right: 0;
     z-index: 1;
     display: block;
-    background-image: url('https://img.freepik.com/free-photo/leaf-nature-backgrounds-pattern-illustration-plant-backdrop-design-abstract-vibrant-green-nature-wallpaper-illustration-generative-ai_188544-12680.jpg?w=1380&t=st=1703487830~exp=1703488430~hmac=3b4e5be33e20116091f5da5e450858ac8eca9ecc968144354574ccfa5f7d12d1');
+    background-image: url('/logo.png');
 }
 
 .bg-sportify{
